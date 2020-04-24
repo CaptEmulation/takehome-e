@@ -8,8 +8,20 @@
     "start": "next start"
   },
   "dependencies": {
+    "@material-ui/core": "^4.9.11",
+    "@material-ui/lab": "^4.0.0-alpha.50",
+    "core-js": "^3.6.5",
+    "giphy-api": "^2.0.1",
     "next": "9.3.5",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "react-element-scroll-hook": "^1.0.8"
+  },
+  "devDependencies": {
+    "@types/giphy-api": "^2.0.2",
+    "@types/node": "^13.13.2",
+    "@types/react": "^16.9.34",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "typescript": "^3.8.3"
   }
 }
