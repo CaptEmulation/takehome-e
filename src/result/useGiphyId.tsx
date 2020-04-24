@@ -12,7 +12,7 @@ export default function (id: string) {
     
     if (id) {
       let wasCancelled = false
-      const giphy = createGiphy(process.env.GIPHY_API_KEY)
+      const giphy = createGiphy({ apiKey: process.env.GIPHY_API_KEY, https: window.location.protocol.includes('https') })
       giphy.id(id).then(response => {
         if (!wasCancelled) {
           setData(response)

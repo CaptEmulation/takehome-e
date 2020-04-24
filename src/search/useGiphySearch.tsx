@@ -88,7 +88,7 @@ export const Provider: FunctionComponent<Partial<State>> = ({
   const [loading, setLoading] = useState(true)
   useEffect(() => {
     let wasCancelled = false
-    const giphy = createGiphy(process.env.GIPHY_API_KEY)
+    const giphy = createGiphy({ apiKey: process.env.GIPHY_API_KEY, https: window.location.protocol.includes('https') })
     giphy.search({ q: prefix, limit: count } as any).then(response => {
       if (!wasCancelled) {
         setData(response)
