@@ -12,7 +12,7 @@
     "@material-ui/lab": "^4.0.0-alpha.50",
     "core-js": "^3.6.5",
     "giphy-api": "^2.0.1",
-    "next": "9.3.5",
+    "next": "11.1.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-element-scroll-hook": "^1.0.8"
